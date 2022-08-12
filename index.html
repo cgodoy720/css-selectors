@@ -6,27 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Selectors</title>
     <!-- Don't forget to link your external style sheet -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <h1>CSS Selectors</h1>
 
-    <h2>Style these planets by using their TAG</h2>
+    <h2 class="bg">Style these planets by using their TAG</h2>
     <ul>
         <li>Mercury</li>
         <li>Venus</li>
         <!-- Grab the list item underneath by giving it an ID -->
-        <li>Earth</li>
-        <li>Mars</li>
+        <li class="green" id="earth">Earth</li>
+        <li id="mars">Mars</li>
     </ul>
 
     <h2>Update these planets by using a CLASS</h2>
-    <ul>
-        <li>Jupiter</li>
+    <ul class="outer bg">
+        <li class="green">Jupiter</li>
         <li>Saturn</li>
-        <li>Uranus</li>
-        <li>Neptune</li>
+        <li class="green">Uranus</li>
+        <li id="neptune" class="cold">Neptune</li>
     </ul>
+
+    <div class="first">
+        <p class="pfirst">I am first</p>
+    </div>
+    <div class="second">
+        <p class="pfirst">I am second</p>
+    </div>
+
 
     <!-- Use a pseudo-selector to change these links when a user hovers over them -->
     <a href="https://htmlcolorcodes.com/">HTML Color Codes</a>
